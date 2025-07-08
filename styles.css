@@ -70,7 +70,7 @@ body {
 #logo-sem-fundo {
     display: flex;
     border-radius: 10%;
-    width: 20%;
+    width: 22%;
     height: auto;
     margin-top: 150px;
     /* transition: box-shadow 1.5s ease, width 1s ease; */
@@ -188,7 +188,7 @@ body {
 }
 
 .topico {
-    background-color: #35617b;
+    background-color: #092b3d;
     color: white;
     border-radius: 15px;
     padding: 40px 50px;
@@ -267,7 +267,7 @@ body {
 }
 
 .topico-chamada {
-    background-color: #35617b;
+    background-color: #092b3d;
     color: white;
     border-radius: 15px;
     padding: 25px;
@@ -309,7 +309,7 @@ body {
 }
 
 #botao-chamada {
-    background-color: #35617b;
+    background-color: #092b3d;
     color: white;
     border: 3px solid white;
     padding: 15px 40px;
@@ -497,7 +497,7 @@ label {
 
         #logo-sem-fundo {
             max-width: 60%;
-            width: 80%;
+            width: 75%;
             height: auto;
         }
 
