@@ -55,8 +55,8 @@ body {
 
 /* ---------------------------------------------------------------- */
 #topo {
-    background-image: url('./imgs/SIN_0899.jpg');
-    height: 80vh;
+    background-image: url('./imgs/lorrantopodesktop.jpg');
+    height: 100vh;
      background-size: cover;
      background-position: center;    /* cobre todo o elemento */
       /* centraliza a imagem */
@@ -70,12 +70,14 @@ body {
 #logo-sem-fundo {
     display: flex;
     border-radius: 10%;
-    width: 22%;
+    width: 300px;
     height: auto;
-    margin-top: 150px;
+    margin-top: 300px;
     /* transition: box-shadow 1.5s ease, width 1s ease; */
-    
+        
 }
+
+
 
 /* Efeito de hover */
 /* #logo-sem-fundo:hover {
@@ -495,13 +497,28 @@ label {
         }
 
 
-        #logo-sem-fundo {
-            max-width: 60%;
-            width: 75%;
-            height: auto;
-        }
+#topo {
+    background-image: url('./imgs/lorrantopomobile.jpg');
+    height: 100vh;
+     background-size: cover;
+     background-position: center;    /* cobre todo o elemento */
+      /* centraliza a imagem */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
 
+#logo-sem-fundo {
+    display: flex;
+    border-radius: 10%;
+    width: 50%;
+    height: auto;
+    margin-top: 150px;
+    /* transition: box-shadow 1.5s ease, width 1s ease; */
+    
+}
 
 
     #cont-perfil, #about-text, .about-title {
@@ -675,36 +692,43 @@ label {
     }
 
 
+#topo {
+    background-image: url('./imgs/foto2.jpg');
+    height: 80vh;
+     background-size: cover;
+     background-position: center;    /* cobre todo o elemento */
+      /* centraliza a imagem */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#logo-sem-fundo {
+    display: flex;
+    border-radius: 10%;
+    width: 50%;
+    height: auto;
+    margin-top: 350px;
+    margin-bottom: 5%;
+    /* transition: box-shadow 1.5s ease, width 1s ease; */
+    
+}
+
+
     #perfil {
-        max-width: 60%;
+        max-width: 70%;
         width: 70%;
 
     }
 
-
-    #titulo-pilar {
-        font-size: 3rem;
-
-
+    .about-title {
+        font-size: 2rem;
     }
 
-    #pilares {
-        font-size: 1.5rem;
-    }
 
-    #lemas {
-       gap: 20px;
-        max-width: 75%;
-        margin-bottom: 20px;
-    }
 
-    #lema1, #lema2, #lema3 {
-        margin-bottom: 2%;
-    }
-
-    .texto-lema {
-        font-size: 1.7rem;
-    }
 
 
 
@@ -745,7 +769,7 @@ label {
     }
 
     .about-p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     max-width: 100%;
     text-align:center;
     margin-bottom: 5%;
@@ -889,3 +913,13 @@ form {
 
 
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  /* estilos para iPad aqui */
+#topo {
+    height: 80vh;
+}
+  #logo-sem-fundo {
+    width: 22%;
+    margin-top: 380px;
+  }
+}
