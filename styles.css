@@ -66,6 +66,17 @@ body {
     align-items: center;
 
 }
+#topo {
+    position: relative;
+    height: 100vh;
+    background-image: url('./imgs/lorrantopodesktop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #logo-sem-fundo {
     display: flex;
@@ -408,6 +419,18 @@ label {
     border-radius: 5px;
     width: 100%;
 }
+.form-group textarea {
+    resize: none;
+    min-height: 80px;
+    padding: 10px;
+    font-size: 2rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    line-height: 1.4;
+    overflow: hidden;
+    box-sizing: border-box;
+}
 
 .form-group textarea {
     font-size: 2rem;
@@ -449,6 +472,8 @@ label {
 
 /* ------------------------------------------------------------------------ */
 @media print {
+
+
     .text-area-replacement {
     font-size: 2rem;
     text-align: justify;
@@ -460,6 +485,7 @@ label {
 
     section * {
         visibility: visible;
+        
     }
 
     #botaoImprimir {
@@ -886,7 +912,7 @@ form {
     margin-top: 10%;
 }
 
-}
+
 
 #but-imp {
     font-size: 1.2rem;
@@ -896,8 +922,8 @@ form {
 #aviso {
     font-size: 1.2rem;
 }
-
 }
+
 
 @media (orientation: portrait) {
 
@@ -907,10 +933,10 @@ form {
         max-width: 100%; /* Garante que não exceda a tela */
         margin: 10px auto; /* Ajusta margens para centralizar */
         padding-bottom: 2%;
-    }}
+    }
 
 
-
+}
 
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
