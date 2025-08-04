@@ -85,6 +85,7 @@ function imprimirFormulario() {
         document.body.removeChild(printArea);
         document.head.removeChild(style);
         document.title = "Lorran - Consultoria Financeira";
+        window.location.href = "https://api.whatsapp.com/send/?phone=5532999981462&text&type=phone_number&app_absent=0";
     }, 1000);
 }
 //--------------------------------------------------------
@@ -94,4 +95,5 @@ function imprimirFormulario() {
         if (section) {
             section.scrollIntoView({ behavior: "smooth" });
         }
+
     });
