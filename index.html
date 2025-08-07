@@ -51,7 +51,13 @@
                             
                         
 
-                            <p class="about-p"><strong> Quer saber mais sobre a consultoria? Preencha o formulário abaixo e fale comigo!</strong></p>
+                            <p class="about-p"><strong> Quer saber mais sobre a consultoria? Clica aqui e preencha o formulário!</strong></p>
+
+                                <button id="botao-seta-baixo" aria-label="Seta para baixo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                                        <path d="M8 12a.5.5 0 0 1-.374-.832l4-4a.5.5 0 1 1 .748.664L8.748 11.5H8zm0 0a.5.5 0 0 0 .374-.832l-4-4a.5.5 0 1 0-.748.664L7.252 11.5H8z"/>
+                                    </svg>
+                                </button>
 
                             <div class="social-links">
                                 <ul id="contato-ul">
@@ -179,164 +185,7 @@
 
         </conteiner4>
 
-        <section id="contact">
-                    <div class= "container-form">
-                        <h2 id="form-title">Formulário de Inscrição</h2>
-                        
-                        <h3 id="instrucoes">Preencha este formulário de inscrição -> baixe o formulário ->  me envie o arquivo no whatsapp. <br>
-                            <strong style="color: #ff5733;">Vamos marcar uma reunião exclusiva e totalmente gratuita para eu te ouvir e explicar como posso te ajudar! <br>
-                            </strong>
-                        </h3>
-                    <form action="#" method="post">
-
-                        <br>
-                        <!-- Nome e Sobrenome -->
-                        <div class="form-group">
-                            <label for="nome">Nome e Sobrenome</label>
-                            <textarea class="text-area" type="text"  id="nome" name="nome" placeholder="Seu nome" required></textarea>
-                        </div>
-            
-                        <!-- Telefone -->
-                        <div class="form-group">
-                            <label for="telefone">Telefone</label>
-                            <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone" required>
-                        </div>
-            
-                        <!-- Idade -->
-                        <div class="form-group">
-                            <label for="idade">Idade</label>
-                            <input type="number" id="idade" name="idade" placeholder="Sua idade" required>
-                        </div>
-            
-                        <!-- Profissão -->
-                        <div class="form-group">
-                            <label for="profissao">Profissão</label>
-                            <textarea class="text-area" type="text" id="profissao" name="profissao" placeholder="Sua profissão" required></textarea>
-                        </div>
-            
-                        <!-- Categoria -->
-                        <div class="form-group">
-                            <label for="categoria">Categoria</label>
-                            <select id="categoria" name="categoria" required>
-                                <option value="" disabled selected>Selecione</option>
-                                <option value="colaborador">Colaborador(a)</option>
-                                <option value="autonomo">Autônomo(a)</option>
-                                <option value="empresario">Empresário(a)</option>
-                                <option value="servidor">Servidor(a) Público(a)</option>
-                                <option value="estudante">Estudante</option>
-                            </select>
-                        </div>
-            
-                        <!-- Estado Civil -->
-                        <div class="form-group">
-                            <label for="estadocivil">Estado Civil</label>
-                            <select id="estadocivil" name="estadocivil" required>
-                                <option value="" disabled selected>Selecione</option>
-                                <option value="solteiro">Solteiro(a)</option>
-                                <option value="casado">Casado(a)</option>
-                                <option value="divorciado">Divorciado(a)</option>
-                                <option value="viuvo">Viúvo(a)</option>
-                            </select>
-                        </div>
-            
-                        <!-- Filhos e/ou Dependentes -->
-                        <div class="form-group">
-                            <label for="dependentes">Filhos e/ou Dependentes</label>
-                            <textarea class="text-area" type="text" id="dependentes" name="dependentes" placeholder="Detalhe os filhos/dependentes"></textarea>
-                        </div>
-            
-                        <!-- Renda Líquida -->
-                        <div class="form-group">
-                            <label for="rendaliquida">Renda Líquida Média Mensal</label>
-                            <textarea class="text-area" type="text" id="rendaliquida" name="rendaliquida" placeholder="Detalhe salários, bônus e outras receitas" required></textarea>
-                        </div>
-            
-                        <!-- Moradia -->
-                        <div class="form-group">
-                            <label for="moradia">Moradia</label>
-                            <select id="moradia" name="moradia" required>
-                                <option value="" disabled selected>Selecione</option>
-                                <option value="imovel_dos_pais">Imóvel dos Pais</option>
-                                <option value="imovel_alugado">Imóvel Alugado</option>
-                                <option value="imovel_proprio_financiado">Imóvel Próprio Financiado</option>
-                                <option value="imovel_proprio_quitado">Imóvel Próprio Quitado</option>
-                            </select>
-                        </div>
-            
-                        <!-- Valor Mensal para Investimentos -->
-                        <div class="form-group">
-                            <label for="investimentos">Qual o valor mensal que você pretende direcionar para investimentos?</label>
-                            <textarea class="text-area" type="text" id="investimentos" name="investimentos" placeholder="Valor mensal para investimentos" required></textarea>
-                        </div>
-            
-                        <div class="form-group">
-                            <label for="investimentosExistentes">Caso já possua investimentos, estão alocados em:</label>
-                            <select id="investimentosExistentes" name="investimentosExistentes" required>
-                                <option value="" disabled selected>Selecione</option>
-                                <option value="nao_invisto">Ainda não invisto</option>
-                                <option value="bancos_tradicionais">Bancos Tradicionais</option>
-                                <option value="bancos_digitais">Bancos Digitais</option>
-                                <option value="corretora_independente">Corretora de Valores Independente</option>
-                                <option value="outros">Outros</option>
-                            </select>
-                        </div>
-                        
-                        <!-- Campo adicional para "Quais?" se a opção "Outros" for escolhida -->
-                        <div class="form-group hidden" id="quaisInvestimentos">
-                            <label for="quaisInvestimentos">Quais?</label>
-                            <textarea class="text-area" type="text" id="quaisInvestimentos" name="quaisInvestimentos" rows="4" placeholder="Detalhe as fontes de investimento"></textarea>
-                        </div>
-            
-                        <!-- Investimentos de Renda Fixa -->
-                        <div class="form-group" id="investimentosRendaFixaCont">
-                            <label for="investimentosRendaFixa">Relação de Investimentos Pessoais de Renda Fixa (se houver)</label>
-                            <textarea class="text-area"  id="investimentosRendaFixa" name="investimentosRendaFixa" rows="4" placeholder="Descreva os investimentos de renda fixa e valores atuais"></textarea>
-                        </div>
-            
-                        <!-- Investimentos de Renda Variável -->
-                        <div class="form-group" id="investimentosRendaVariavelCont">
-                            <label for="investimentosRendaVariavel">Relação de Investimentos Pessoais de Renda Variável (se houver)</label>
-                            <textarea class="text-area"  id="investimentosRendaVariavel" name="investimentosRendaVariavel" rows="4" placeholder="Descreva os investimentos de renda variável e valores atuais"></textarea>
-                        </div>
-            
-                        <!-- Relação Patrimonial -->
-                        <div class="form-group">
-                            <label for="relacaoPatrimonial">Relação Patrimonial Pessoal (se houver)</label>
-                            <textarea class="text-area"  id="relacaoPatrimonial" name="relacaoPatrimonial" rows="4" placeholder="Descreva a relação patrimonial pessoal"></textarea>
-                        </div>
-            
-                        <!-- Relação de Seguros -->
-                        <div class="form-group">
-                            <label for="segurosContratados">Relação de Seguros Contratados</label>
-                            <textarea class="text-area"  id="segurosContratados" name="segurosContratados" rows="4" placeholder="Seguros veiculares, de vida, previdência, etc."></textarea>
-                        </div>
-
-                        <!-- Relação de Dívidas -->
-                        <div class="form-group">
-                            <label for="relacaoPatrimonial">Relação de Dívidas (se houver)</label>
-                            <textarea  class="text-area" id="relacaoPatrimonial" name="relacaoPatrimonial" rows="4" placeholder="Descreva suas dívidas (financiamentos, empréstimos, etc.)"></textarea>
-                        </div>
-            
-                        <!-- Objetivos Financeiros e Motivação -->
-                        <div class="form-group">
-                            <label for="objetivosFinanceiros">Principais Objetivos Financeiros e Motivação para Contratação da Consultoria Financeira</label>
-                            <textarea class="text-area"  id="objetivosFinanceiros" name="objetivosFinanceiros" rows="4" placeholder="Descreva seus objetivos financeiros e motivação"></textarea>
-                        </div>
-
-
-                
-            
-
-                    </form>
-
-                    <div class="final-form">
-                        <button type="button" onclick="imprimirFormulario()" class="btn btn-primary" id="but-imp">Baixar Formulário</button>
-
-                        <h1 id="aviso"><strong style="color: #ff5733;">Caso não consiga imprimir pelo celular, faça a captura de tela dos itens do formulário.</strong></h1>
-                    </div>
-
-                </div>
-        </section>
+       
 
 
     </principal>
